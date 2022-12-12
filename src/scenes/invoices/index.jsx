@@ -17,13 +17,6 @@ const Invoices = () => {
       cellClassName: "name-column-cell",
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      headerAlign: "left",
-      align: "left",
-    },
-    {
       field: "phone",
       headerName: "Phone Number",
       flex: 1,
@@ -82,7 +75,7 @@ const Invoices = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns}></DataGrid>
+        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns}/>
       </Box>
     </Box>
   );
